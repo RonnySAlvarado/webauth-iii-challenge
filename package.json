@@ -2,6 +2,10 @@
   "name": "webauth-iii-challenge",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "server": "nodemon index.js",
+    "start": "node index.js"
+  },
   "repository": "https://github.com/RonnySAlvarado/webauth-iii-challenge.git",
   "author": "Ronny Alvarado <rsalvarado777@gmail.com>",
   "license": "MIT",

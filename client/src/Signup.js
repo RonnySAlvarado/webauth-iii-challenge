@@ -12,7 +12,7 @@ class Signup extends React.Component {
     event.preventDefault();
     try {
       const { department, username, password } = this.state;
-      const result = await axiosToken.post("/auth/register", {
+      const result = await axiosToken.post("/auth/signup", {
         username,
         password,
         department

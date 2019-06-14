@@ -1,5 +1,5 @@
 import React from "react";
-import axiosInstance from "./helpers/axiosToken";
+import axiosToken from "./helpers/axiosToken";
 import { withRouter } from "react-router-dom";
 
 class Users extends React.Component {
@@ -8,7 +8,7 @@ class Users extends React.Component {
   };
   async componentDidMount() {
     try {
-      const result = await axiosInstance.get("/users");
+      const result = await axiosToken.get("/auth/users");
       this.setState({ users: result.data });
       console.log(result);
     } catch (err) {
